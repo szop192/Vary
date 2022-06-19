@@ -1,5 +1,109 @@
-$bg: #ff0;
+@import url('https://fonts.googleapis.com/css2?family=K2D:wght@400;600;700&display=swap');
 
-body{
-    background-color: $bg;
+$pink: #D36CF8;
+$fiol: #8C98FF;
+$gray: #363636;
+$wh: #FFFFFF;
+
+$K2D: 'K2D', sans-serif;
+
+$r_minmob:320px;
+$r_mob_360:360px;
+$r_mob_400:400px;
+$r_mob_500:500px;
+$r_mob_600:600px;
+$r_tab:768px;
+$r_tab_900:900px;
+$r_desk:1000px;
+$r_desk_1120:1120px;
+$r_desk_hd:1200px;
+$r_desk_1280:1280px;
+$r_desk_1350:1350px;
+$r_desk_full_1750:1750px;
+
+html
+{
+    font-size: 12px;
+    @media (max-width:$r_mob_500) 
+    {
+        font-size: 8px;
+    }
+}
+body
+{
+    font-size: 2rem;
+    font-family: $K2D;
+    color: $wh;
+    position: relative;
+}
+
+.container
+{
+    max-width: 1760px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header
+{
+    background-color: $gray;
+    max-width: 2100px;
+    margin: 0 auto 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 15px 0 15px;
+    gap: 5%;
+    &__flex
+    {
+        display: flex;
+    }
+    &__logo
+    {
+        background: linear-gradient(180deg, #8C98FF 0%, rgba(211, 108, 248, 0.75) 100%);
+        width: 150px;
+        height: 98px;
+        border-radius: 150px;
+        opacity: 0.8;
+        box-shadow: 0px 15px 25px rgba(140, 152, 255, 0.75);
+        border: $pink 1px solid;
+        position: relative;
+        transition: 0.5s;
+        cursor: pointer;
+        &:hover
+        {
+            background: transparent;
+            border: $pink 1px solid;
+            box-shadow: 0px 15px 25px rgba(140, 152, 255, 0);
+        }
+    }
+    &__heart
+    {
+        background-image: url(../img/heart-solid\ 2.img);
+        position: absolute;
+        width: 79px;
+        height: 79px;
+        left: 35px;
+        top: 10px;
+        cursor: pointer;
+        transform: scale(1);
+        transition: 0.5s;
+        animation: heart 3s linear infinite;
+    }
+}
+@keyframes heart
+{
+    0%
+    {
+        transform: scale(1);
+    }
+    50%
+    {
+        transform: scale(1.1);
+    }
+    100%
+    {
+        transform: scale(1);
+    }
 }
