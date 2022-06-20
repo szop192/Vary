@@ -59,7 +59,7 @@ body
     &__navigation
     {
         align-self: flex-start;
-        flex-basis: 55%;
+        flex-basis: 52%;
     }
     &__logo
     {
@@ -103,7 +103,7 @@ body
     {
         display: flex;
         list-style-type: none;
-        margin: 0;
+        margin: 2rem 0 0;
         padding-left: 0;
         gap: 3.8rem;
         &-conect
@@ -130,7 +130,7 @@ body
         }
         &-tel
         {
-            font-size: 2rem;
+            font-size: 2.5rem;
             &::before
             {
                 display: block;
@@ -144,7 +144,7 @@ body
         }
         &-mail
         {
-            font-size: 2rem;
+            font-size: 2.5rem;
         }
         &::after
         {
@@ -778,14 +778,14 @@ body
     &__copy 
     {
         opacity: 0.3;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         line-height: 150%;
     }
    
     &__author-text 
     {
         opacity: 0.3;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         line-height: 150%;
         @media(max-width:$r_mob_360)
         {
