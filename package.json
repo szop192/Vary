@@ -17,7 +17,6 @@
   },
   "dependencies": {
     "html-webpack-plugin": "^5.5.0",
-    "normalize.css": "^8.0.1",
-    "swiper": "^8.2.4"
+    "normalize.css": "^8.0.1"
   }
 }

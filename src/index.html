@@ -8,25 +8,85 @@
 </head>
 <body>
     <header class="header">
-        <div class="container">
-            <div class="header__flex">
-                <div class="header__logo">
-                    <a class="header__heart" href="#"></a>
-                </div>
-                <nav>
-                    <ul class="header__nav">
-                        <li class="header__list"><a class="header__link" href="#">Кто такая</a></li>
-                        <li class="header__list"><a class="header__link" href="#">Фотокарточки</a></li>
-                        <li class="header__list"><a class="header__link" href="#">Видосик</a></li>
-                        <li class="header__list"><a class="header__link" href="#">Оставить отзыв</a></li>
-                    </ul>
-                </nav>
-                <div class="header__conect">
-                    <a class="header__tel" href="tel:+79615335454">+7 961 533 54 54</a>
-                    <a class="header__mail" href="mailto:varvara.pyatakova@gmail.com">varvara.pyatakova@gmail.com</a>
+        <div class="header__logo">
+            <a class="header__heart" href="#"></a>
+        </div>
+        <nav class="header__navigation">
+            <ul class="header__nav">
+                <li class="header__list"><a class="header__link scroll" href="#who">Кто такая</a></li>
+                <li class="header__list"><a class="header__link scroll" href="#photo">Фотокарточки</a></li>
+                <li class="header__list"><a class="header__link scroll" href="#">Видосик</a></li>
+                <li class="header__list"><a class="header__link scroll" href="#">Оставить отзыв</a></li>
+            </ul>
+        </nav>
+        <ul class="header__nav header__nav-conect">
+           <li> <a class="header__link header__link-tel" href="tel:+79615335454">+7 961 533 54 54</a></li>
+           <li> <a class="header__link header__link-mail" href="mailto:varvara.pyatakova@gmail.com">varvara.pyatakova@gmail.com</a></li>
+        </ul>
+        <h1 class="header__head">BUMBUSIK</h1>
+    </header>
+    <section class="who" id="who">
+        <div class="wrapper">
+            <div class="container">
+                <div class="flex">
+                    <h1 class="head">Кто такая?</h1>
+                    <p class="text">Варя - лучший человечик на свете, больше ничего писать и не нужно!</p>
                 </div>
             </div>
         </div>
-    </header>
+    </section>
+    <div class="line"></div>
+    <main class="photo" id="photo">
+        <div class="wrapper wrapper-big">
+            <div class="container">
+                <div class="column">
+                    <div class="flex flex-photo">
+                        <h1 class="head">Фотокарточки</h1>
+                        <p class="text text-photo">А вот и эта красотка</p>
+                    </div>
+                    <div class="slider">
+                        <div class="swiper offerSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide swiper-slide_white swiper-slide_1">
+                                </div>
+                                <div class="swiper-slide swiper-slide_white swiper-slide_2">
+                                </div>
+                                <div class="swiper-slide swiper-slide_white swiper-slide_3">
+                                </div>
+                                <div class="swiper-slide swiper-slide_white swiper-slide_4">
+                                </div>
+                                <div class="swiper-slide swiper-slide_white swiper-slide_5">
+                                </div>
+                                <div class="swiper-slide swiper-slide_white swiper-slide_6">
+                                </div>
+                                <div class="swiper-slide swiper-slide_white swiper-slide_7">
+                                </div>
+                                <div class="swiper-slide swiper-slide_white swiper-slide_7">
+                                </div>
+                                <div class="swiper-slide swiper-slide_white swiper-slide_7">
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="line line-2"></div>
+    <section class="video" id="video">
+        <div class="wrapper wrapper-big">
+            <div class="container">
+                <div class="column">
+                    <div class="flex">
+                        <h1 class="head">Видосик</h1>
+                        <p class="text text-video">Для тех, кто по фотокарточкам так и не понял, что она самый лучший человечик на свете</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
