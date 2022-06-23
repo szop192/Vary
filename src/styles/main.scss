@@ -986,6 +986,10 @@ body
             top: 32px;
             background: rgba($color: #E2C8FD, $alpha: 1.0);
         }
+        @media (max-width: $r_mob_500) 
+        {
+            top: 26px;
+        }
     }
     &__list-item 
     {
@@ -1085,11 +1089,12 @@ body
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 100%;
+        gap: 5rem;
         @media(max-width:$r_mob_500)
         {
             flex-direction: column;
             gap: 2rem;
+            width: 100%;
         }
     }
     &__flex
@@ -1131,10 +1136,13 @@ body
     {
         &-tel
         {
-            &::before
-            {
-                height: 12px;
-                right: -7px;
+            @media(max-width:$r_mob_500)
+            { 
+                &::before
+                {
+                    height: 12px;
+                    right: -7px;
+                }
             }
         }
     }
@@ -1164,6 +1172,13 @@ body
         @media(max-width:$r_mob_360)
         {
             gap: 0.5rem;
+        }
+        &-med 
+        {
+            @media(max-width:$r_mob_500)
+            {
+                gap: 2rem;
+            }
         }
     }
     &__soc
