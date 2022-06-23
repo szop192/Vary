@@ -150,4 +150,25 @@ document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper) {
         }
     })
 });
+let btn = document.querySelector('.btn');
+let clip = document.querySelector('.clip');
+let close = document.querySelector('.close');
+let play = document.querySelector('.play');
+btn.onclick = function()
+{
+    btn.classList.add('active')
+    clip.classList.add('active')
+    play.play();
+    play.currentTime = 0;
+    document.body.style.overflow = 'hidden';
+}
+close.onclick = function()
+{
+    btn.classList.remove('active')
+    clip.classList.remove('active')
+    play.pause();
+    document.body.style.overflow = '';
+}
+
+
 
