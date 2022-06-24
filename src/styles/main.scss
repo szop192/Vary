@@ -672,6 +672,14 @@ body
         {
             background-image: url(../img/7.jpg);
         }
+        &_8
+        {
+            background-image: url(../img/8.jpg);
+        }
+        &_9
+        {
+            background-image: url(../img/9.jpg);
+        }
     }
     &-pagination
     {
@@ -986,7 +994,7 @@ body
             top: 32px;
             background: rgba($color: #E2C8FD, $alpha: 1.0);
         }
-        @media (max-width: $r_mob_500) 
+        @media (max-width: $r_mob_400) 
         {
             top: 26px;
         }
@@ -1177,7 +1185,7 @@ body
         {
             @media(max-width:$r_mob_500)
             {
-                gap: 2rem;
+                gap: 3rem;
             }
         }
     }
@@ -1283,7 +1291,8 @@ body
         @media(max-width:$r_mob_500)
         {
             font-size: 2rem;
-            margin: 0;
+            margin-top: 2rem;
+            margin-bottom: 0;
         }
     }
    
@@ -1295,6 +1304,7 @@ body
         @media(max-width:$r_mob_500)
         {
             font-size: 2rem;
+            margin: 0;
         }
     }
 
